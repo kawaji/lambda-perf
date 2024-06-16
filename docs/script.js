@@ -120,7 +120,7 @@ const drawLang = async (idx, data) => {
   runtimeName.innerHTML = `${data.d}`;
 
   for (let i = 0; i < data.i.length; ++i) {
-    await sleep(data.i[i]);
+    await sleep(data.i[i] * 5);
     addSquare(coldStartElement);
   }
 };
