@@ -11,7 +11,7 @@ const sendToS3 = async (region, path, codeFilename, delayInMs, nbRetry) => {
   }
   const fileStream = fs.createReadStream(`./runtimes/${path}/${codeFilename}`);
   const putObjectParams = {
-    Bucket: `lambda-perf-${region}`,
+    Bucket: `lambda-perf-kawaji-${region}`,
     Key: `${path}/${codeFilename}`,
     Body: fileStream,
   };
