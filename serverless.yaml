@@ -119,7 +119,7 @@ package:
 functions:
   
   functionReportLogProcessorRs:
-    runtime: provided.al2
+    runtime: provided.al2023
     architecture: arm64
     handler: bootstrap
     environment:
@@ -129,7 +129,7 @@ functions:
       artifact: target/lambda/function-report-log-processor-rs/bootstrap-function-report-log-processor-rs.zip
 
   functionTriggerDeployerRs:
-    runtime: provided.al2
+    runtime: provided.al2023
     architecture: arm64
     handler: bootstrap
     environment:
@@ -146,7 +146,7 @@ functions:
       - schedule: cron(0,10,20,30,40,50 * * * ? *)
 
   functionDeployerRs:
-    runtime: provided.al2
+    runtime: provided.al2023
     architecture: arm64
     handler: bootstrap
     package:
@@ -168,7 +168,7 @@ functions:
           maximumBatchingWindow: 30
 
   functionSnapstartDeployerRs:
-    runtime: provided.al2
+    runtime: provided.al2023
     architecture: arm64
     handler: bootstrap
     package:
@@ -192,7 +192,7 @@ functions:
 
 
   functionInvokerRs:
-    runtime: provided.al2
+    runtime: provided.al2023
     architecture: arm64
     handler: bootstrap
     package:
