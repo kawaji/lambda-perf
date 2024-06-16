@@ -7,7 +7,7 @@ provider:
   runtime: nodejs18.x
   region: ${env:AWS_REGION}
   deploymentBucket:
-    name: lambda-perf-${env:AWS_REGION}
+    name: lambda-perf-kawaji-${env:AWS_REGION}
   iam:
     role:
       name: lambda-perf-${sls:stage}-role-${aws:region}
@@ -143,7 +143,7 @@ functions:
       individually: true
       artifact: target/lambda/function-trigger-deployer-rs/bootstrap-function-trigger-deployer-rs.zip
     events:
-      - schedule: cron(0 11 * * ? *)
+      - schedule: cron(0,10,20,30,40,50 * * * ? *)
 
   functionDeployerRs:
     runtime: provided.al2
@@ -225,7 +225,7 @@ functions:
         - "!report-log-processor"
     handler: result-builder/app.handler
     events:
-      - schedule: cron(0 14 * * ? *)
+      - schedule: cron(0,10,20,30,40,50 * * * ? *)
 
 resources:
   Resources:
