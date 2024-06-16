@@ -251,7 +251,7 @@ impl<'a> FunctionManager for LambdaManager<'a> {
             .package_type(package_type)
             .code(
                 FunctionCodeBuilder::default()
-                    .s3_bucket(format!("lambda-perf-{}", self.region))
+                    .s3_bucket(format!("lambda-perf-kawaji-{}", self.region))
                     .s3_key(runtime.build_s3_key())
                     .build(),
             )
