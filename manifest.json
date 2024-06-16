@@ -52,14 +52,6 @@
       }
     },
     {
-      "displayName": "java21 snapstart",
-      "runtime": "java21",
-      "handler": "io.github.maxday.Handler::handleRequest",
-      "path": "java21_snapstart",
-      "isSnapstart": true,
-      "architectures": ["x86_64"]
-    },
-    {
       "displayName": "llrt (prov.al2023)",
       "runtime": "provided.al2023",
       "handler": "index.handler",
