@@ -1,1 +1,1 @@
-{"metadata":{"generatedAt":"2024-06-16T21:10:26.921Z"},"runtimeData":[]}
+{"metadata":{"generatedAt":"2024-06-16T21:20:26.778Z"},"runtimeData":[{"r":"lambda-perf-nodejs20x-zip-128-x86_64","p":"zip","d":"nodejs20.x","i":[152.43,144.06,141.17,154.62,130.25,129.96,131.78,138.49],"m":128,"a":"x86_64","mu":64.5,"ad":9.889,"acd":140.345}]}
