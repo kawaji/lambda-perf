@@ -66,7 +66,7 @@ const getFromS3 = async (
     : `code_${architecture}.zip`;
 
   const getObjectParams = {
-    Bucket: `lambda-perf-${region}`,
+    Bucket: `lambda-perf-kawaji-${region}`,
     Key: `${path}/${codeFilename}`,
   };
   const command = new GetObjectCommand(getObjectParams);
